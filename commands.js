@@ -108,6 +108,7 @@ const stateFunc = (_args, _wordsByLength, gameState) => {
 const endFunc = (_args, _wordsByLength, gameState) => ({
   reply: 'game has been terminated',
   newState = defaultState(),
+  gameState,
 });
 
 module.exports = {
