@@ -105,6 +105,11 @@ const stateFunc = (_args, _wordsByLength, gameState) => {
   };
 };
 
+const endFunc = (_args, _wordsByLength, gameState) => ({
+  reply: 'game has been terminated',
+  newState = defaultState(),
+});
+
 module.exports = {
   defaultState,
   commands: {
@@ -112,5 +117,6 @@ module.exports = {
     start: startFunc,
     guess: guessFunc,
     state: stateFunc,
+    end: endFunc,
   },
 };
