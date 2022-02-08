@@ -47,7 +47,7 @@ const parse = (msg) => {
     const token = tokens[i];
     if (token.startsWith('!')) {
       const command = token.substring(1);
-      if (command === 'ping' || command === 'state') {
+      if (command === 'ping' || command === 'state' || command === 'end') {
         return {
           command,
           args: [],
