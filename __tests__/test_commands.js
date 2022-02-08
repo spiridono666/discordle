@@ -34,7 +34,7 @@ describe('Bot Command Tests', () => {
       const args = ['5'];
       const wordsByLength = { 5: ['tests'] };
       const response = commands.start(args, wordsByLength, emptyState);
-      expect(response.reply).toEqual('Discordle of length 5 started.');
+      expect(response.reply).toEqual('Wordle of length 5 started.');
       expect(response.gameState).toEqual({
         started: true,
         length: 5,

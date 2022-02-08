@@ -37,7 +37,7 @@ const startFunc = (args, wordsByLength, gameState) => {
   const randomWord = words[Math.floor(Math.random() * words.length)];
   console.log(`random word ${randomWord} selected`);
   return {
-    reply: `Discordle of length ${wordLength} started.`,
+    reply: `Wordle of length ${wordLength} started.`,
     gameState: defaultState(true, parseInt(wordLength, 10), randomWord, 0),
   };
 };

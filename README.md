@@ -6,7 +6,7 @@ Discord Bot to play a wordle-like game with users.
 
 ## [Add this bot to your server!](https://discord.com/oauth2/authorize?client_id=931245994681700453&permissions=292057982976&scope=bot)
 
-![Image](images/Discordle.png)
+![Image](images/wordle.png)
 
 ---
 ## Requirements
@@ -25,10 +25,11 @@ yarn start
 
 |Command|Description|
 |:-:|:-:|
-|`@Discordle !ping`| Ping server to see if it is up. Returns `pong`.|
-|`@Discordle !start [length]`| Start a game of length `length`. Will pick out a word from the corpus file, `corpus.txt`.|
-|`@Discordle !state`| Get the current state of a game, if one is currently being played in the channel.|
-|`@Discordle !guess [word]`| Guess the word described by `word`. Will increment the guesses counter.|
+|`@Wordle !ping`| Ping server to see if it is up. Returns `pong`.|
+|`@Wordle !start [length]`| Start a game of length `length`. Will pick out a word from the corpus file, `corpus.txt`.|
+|`@Wordle !state`| Get the current state of a game, if one is currently being played in the channel.|
+|`@Wordle !guess [word]`| Guess the word described by `word`. Will increment the guesses counter.|
+|`@Wordle !end `| End current session|
 
 ---
 ## Feature Ideas
