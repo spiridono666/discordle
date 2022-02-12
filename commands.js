@@ -59,7 +59,8 @@ const testWord = (guess, answer) => {
   return [results, letters];
 };
 
-const letterText = (failedSet) => LETTERS.map((l) => (failedSet.has(l) ? `~~${l}~~` : l)).join(' ');
+//const letterText = (failedSet) => LETTERS.map((l) => (failedSet.has(l) ? `~~${l}~~` : l)).join(' ');
+const letterText = (failedSet) => LETTERS.filter((l) => !failedSet.has(l)).join(' ');
 
 const guessFunc = (args, _wordsByLength, gameState) => {
   if (gameState.started) {
